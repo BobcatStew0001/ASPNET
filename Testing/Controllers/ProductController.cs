@@ -59,6 +59,16 @@ namespace Testing.Controllers
         {
             repo.DeleteProduct(product);
             return RedirectToAction("Index");
+        }[HttpGet]
+        public IActionResult Index()
+        {
+        return View();
+        }
+    
+        [HttpPost]
+        public IActionResult Index(string zip)
+        {
+        
         }
     }
 }
